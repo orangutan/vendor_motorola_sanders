@@ -74,41 +74,44 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := CNEService
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
+# this one chooses the best network available if both wifi
+# and mobile data are on, instead of just using wifi
+# include $(CLEAR_VARS)
+# LOCAL_MODULE := CNEService
+# LOCAL_MODULE_OWNER := motorola
+# LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
+# LOCAL_CERTIFICATE := platform
+# LOCAL_MODULE_TAGS := optional
+# LOCAL_MODULE_CLASS := APPS
+# LOCAL_DEX_PREOPT := false
+# LOCAL_MODULE_SUFFIX := .apk
+# LOCAL_PRIVILEGED_MODULE := true
+# include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := DTVPlayer
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/vendor/app/DTVPlayer/DTVPlayer.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DTVService
-LOCAL_MODULE_OWNER := motorola
-LOCAL_SRC_FILES := proprietary/vendor/app/DTVService/DTVService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
+# digital tv broadcast, doesnt work in many countries.
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := DTVPlayer
+#LOCAL_MODULE_OWNER := motorola
+#LOCAL_SRC_FILES := proprietary/vendor/app/DTVPlayer/DTVPlayer.apk
+#LOCAL_CERTIFICATE := platform
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_DEX_PREOPT := false
+#LOCAL_MODULE_SUFFIX := .apk
+#LOCAL_PROPRIETARY_MODULE := true
+#include $(BUILD_PREBUILT)
+#
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := DTVService
+#LOCAL_MODULE_OWNER := motorola
+#LOCAL_SRC_FILES := proprietary/vendor/app/DTVService/DTVService.apk
+#LOCAL_CERTIFICATE := platform
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_DEX_PREOPT := false
+#LOCAL_MODULE_SUFFIX := .apk
+#LOCAL_PROPRIETARY_MODULE := true
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilmsgtunnel
@@ -122,38 +125,38 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollmentOKGoogleCS47L35
-LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentOKGoogleCS47L35/HotwordEnrollmentOKGoogleCS47L35.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollmentTGoogleCS47L35
-LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentTGoogleCS47L35/HotwordEnrollmentTGoogleCS47L35.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollmentXGoogleCS47L35
-LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentXGoogleCS47L35/HotwordEnrollmentXGoogleCS47L35.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := HotwordEnrollmentOKGoogleCS47L35
+#LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentOKGoogleCS47L35/HotwordEnrollmentOKGoogleCS47L35.apk
+#LOCAL_CERTIFICATE := PRESIGNED
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_DEX_PREOPT := false
+#LOCAL_MODULE_SUFFIX := .apk
+#LOCAL_PRIVILEGED_MODULE := true
+#include $(BUILD_PREBUILT)
+#
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := HotwordEnrollmentTGoogleCS47L35
+#LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentTGoogleCS47L35/HotwordEnrollmentTGoogleCS47L35.apk
+#LOCAL_CERTIFICATE := PRESIGNED
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_DEX_PREOPT := false
+#LOCAL_MODULE_SUFFIX := .apk
+#LOCAL_PRIVILEGED_MODULE := true
+#include $(BUILD_PREBUILT)
+#
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := HotwordEnrollmentXGoogleCS47L35
+#LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollmentXGoogleCS47L35/HotwordEnrollmentXGoogleCS47L35.apk
+#LOCAL_CERTIFICATE := PRESIGNED
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_DEX_PREOPT := false
+#LOCAL_MODULE_SUFFIX := .apk
+#LOCAL_PRIVILEGED_MODULE := true
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := ims

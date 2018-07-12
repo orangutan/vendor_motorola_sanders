@@ -1306,8 +1306,6 @@ PRODUCT_PACKAGES += \
     embms \
     com.qti.location.sdk \
     com.qti.snapdragon.sdk.display \
-    DTVPlayer \
-    DTVService \
     embmslibrary \
     imscmlibrary \
     qcrilhook \
@@ -1329,10 +1327,12 @@ PRODUCT_PACKAGES += \
     rcsimssettings \
     tcmclient \
     com.quicinc.cne.api-V1.0-java \
-    HotwordEnrollmentOKGoogleCS47L35 \
-    HotwordEnrollmentTGoogleCS47L35 \
-    HotwordEnrollmentXGoogleCS47L35 \
-    QtiTelephonyService \
-    CNEService
+    QtiTelephonyService
 
+#    CNEService
+#    DTVPlayer \
+#    DTVService \
+#    HotwordEnrollmentOKGoogleCS47L35 \
+#    HotwordEnrollmentTGoogleCS47L35 \
+#    HotwordEnrollmentXGoogleCS47L35 \
 
